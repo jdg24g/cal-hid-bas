@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #3e363f;
+  background-color: #f6f5f7;
+  zoom: unset;
+}
+main {
+  height: 100vh;
+}
+
+#left-card {
+  height: 500px;
+  width: 50%;
+}
+#right-card {
+  height: 500px;
+  width: 50%;
+  background-color: #ff3e6d;
+}
+
+@media (width <= 500px) {
+  main {
+    height: auto;
+  }
+  #left-card {
+    width: 100vw;
+    height: 50vh;
+  }
+  #right-card {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+.centrar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-title {
+  font-weight: 900;
+  font-size: xx-large;
+}
+.title-2 {
+  color: white;
+}
+.card-text-2 {
+  color: white;
+}
+#calcular {
+  background-color: #ff3e6d;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #cf0a3b;
+    border-color: #ff1852;
+  }
+}
+#resultado {
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  color: #0283cc;
+  font-weight: 700;
+  font-size: 0;
+  padding: 0;
+  transition: all 0.3s 0.3s ease-in-out;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

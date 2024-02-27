@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="theme-color" content="#ff3e6d" />
+    <title>Calculadora Hidratacion Basal</title>
+  </head>
+  <body>
+    <main class="d-flex justify-content-center align-items-center">
+      <div
+        class="d-flex flex-wrap justify-content-center"
+        style="height: 500px; width: 1000px"
+      >
+        <div
+          class="card justify-content-center align-items-center text-center"
+          id="left-card"
+        >
+          <div class="card-body centrar">
+            <h4 class="card-title">Hidratación Basal</h4>
+            <div>
+              <label class="p-3" for=""> Completa todos los datos</label>
+              <input
+                type="number"
+                class="form-control"
+                name="peso"
+                id="peso"
+                aria-describedby="helpId"
+                placeholder="Coloca el peso."
+              />
+              <button type="button" class="btn btn-danger mt-3" id="calcular">
+                Calcular
+              </button>
+            </div>
+            <div id="resultado"></div>
+          </div>
+        </div>
+        <div
+          class="card justify-content-center align-items-center"
+          id="right-card"
+        >
+          <div class="card-body centrar">
+            <h4 class="card-title title-2 text-center">¿Como se calcula?</h4>
+            <div class="card-text">
+              <ul class="card-text-2">
+                <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                <li>
+                  Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta
+                  20kg
+                </li>
+                <li>
+                  De 20kg para arriba, se suman 20cc por cada kilo adicional
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
